@@ -1,0 +1,15 @@
+button{
+    background-color: #dfdfdf;
+    color: blue;
+    padding: 5px ;
+    margin: 8px 0;
+    cursor: pointer;
+
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
