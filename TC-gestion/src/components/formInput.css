@@ -89,9 +89,19 @@ select:invalid[focused="true"] ~ span {
     margin-right: 0;
     gap: 20px;
 }
-.submit {
+.submit,.edit {
     background-color:#1565C0;
     font-size: medium;
+}
+.edit {
+    background-color:#1565C0;
+    width: 70%;
+    font-size: medium;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
 }
 .cancel {
     background-color: #FFFFFF;
