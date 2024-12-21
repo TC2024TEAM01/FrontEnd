@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body, html {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer {
+    width: 500rem;
+    height: 400rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form {
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.formInput {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input, select {
+    padding: 15px;
+    margin: 20px 0px;
+    border-radius: 5px;
+    height: 1px;   /* Desired height */
+    color: black;
+    border: 1px solid gray;
+    background-color: #FFFFFF;
+    flex: 1; /* Add this line to make inputs stretch *//* Ensure the input/select fields take the full width */
+}
+
+label {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1C1C1C;
+    margin-bottom: -20px;
+}
+
+span {
+    font-size: 12px;
+    margin-top: -20px;
+    padding: 3px;
+    color: red;
+    display: none;
+}
+input:invalid[focused="true"],
+select:invalid[focused="true"] {
+    border: 1px solid red;
+}
+
+input:invalid[focused="true"] ~ span,
+select:invalid[focused="true"] ~ span {
+    display: flex;
+}
+
+.nameInputs {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    width: 100%;
+}
+
+.otherInputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    justify-content:flex-start;
+    width: 50%;
+    border-radius: 20px;
+    margin-right: 0;
+    gap: 20px;
+}
+.submit {
+    background-color:#1565C0;
+    font-size: medium;
+}
+.cancel {
+    background-color: #FFFFFF;
+    color: #1565C0;
+    border: 1px solid #1565C0;
+    size: 99%;
+    border-radius: 5px;
+}
