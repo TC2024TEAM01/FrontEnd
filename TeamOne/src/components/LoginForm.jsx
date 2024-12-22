@@ -54,7 +54,8 @@ const RegistrationApp = () => {
     <div className="login-bg">
       <div className="form-container">
         <img src="../../public/Frame 3.png" alt="" />
-        <h2>Registration Form</h2>
+        <h2>Log In</h2>
+        <p>Welcome! Enter Your Acount Details</p>
         {submitted && (
             <p style={{ color: "green", textAlign: "center" }}>
             Form submitted successfully!
@@ -62,12 +63,12 @@ const RegistrationApp = () => {
         )}
         <form onSubmit={handleSubmit}>
         
-            {/* Email Field */}
+          <div className="input-container">
             <div className="emai-field" style={{ marginBottom: "15px" }}>
               <label style={{ display: "block", marginBottom: "5px" }}>
                   Email:
               </label>
-              <input type="email" name="email" value={formData.email} onChange={handleChange}/>
+              <input placeholder="Enter a valid Email" type="email" name="email" value={formData.email} onChange={handleChange}/>
               {errors.email && (
                   <p style={{ color: "red", fontSize: "14px" }}>{errors.email}</p>
               )}
@@ -79,6 +80,7 @@ const RegistrationApp = () => {
                   Password:
               </label>
               <input
+              placeholder="Enter your password"
                   type="password"
                   name="password"
                   value={formData.password}
@@ -88,9 +90,10 @@ const RegistrationApp = () => {
                   <p style={{ color: "red", fontSize: "14px" }}>{errors.password}</p>
               )}
             </div>
-            <p>Forgot Password</p>
+            </div>
+            <p style={{color: "#1565C0"}}>Forgot Password</p>
 
-            <button type="submit">Register</button>
+            <button type="submit">Sign in</button>
         </form>
       </div>
     </div>
