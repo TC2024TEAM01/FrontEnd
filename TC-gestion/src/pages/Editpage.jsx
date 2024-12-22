@@ -73,6 +73,12 @@ const Editpage = () => {
     };
 
     return (
+        <div style={
+            {
+                backgroundColor: 'white'
+            }
+        }>
+
         <div className="formContainer">
             <form onSubmit={handleSubmit}>
                 <h1 style={{
@@ -114,6 +120,7 @@ const Editpage = () => {
                 </div>
                 
             </form>
+        </div>
         </div>
     );
 };

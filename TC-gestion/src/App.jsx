@@ -1,25 +1,39 @@
-// filepath: /c:/Users/Redouane/Desktop/TC gestion/FrontEnd/TC-gestion/src/App.jsx
-/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import "./app.css";
-import AddNew from "./pages/AddNew";
 import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route } from "react-router-dom";
+import NavBarpro from "./components/NavBarpro";
+import AddNew from "./pages/AddNew";
 import Editpage from "./pages/Editpage";
 import Signup from "./pages/signup";
 import Profile from "./pages/Profile";
+import CheckIn from "./pages/CheckIn";
+import ProfileAd from "./pages/ProfileAd";
+import NavBarAd from "./components/NavBarAd";
+
+const Layout = ({ children }) => (
+  <>
+    <NavBarAd/>
+    <ProfileAd/>
+    <div>{children}</div>
+  </>
+);
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <>
-      <Route path="/addnew" element={<AddNew />} />
-      <Route path="/editpage" element={<Editpage />} />
-      <Route path="/signup" element={<Signup />} />
-      <Route path="/profile" element={<Profile />} />
-    </>
+    <Route path="/" element={<Layout />}>
+      <Route path="addnew" element={<AddNew />} />
+      <Route path="profile" element={<Profile />} />
+      <Route path="checkin" element={<CheckIn />} />
+      <Route path="profileem" element={<ProfileAd />} />
+    </Route>
   )
 );
+
 const App = () => {
-    return (
-    <RouterProvider router={router} />
+  return (
+    <div className="app-container">
+      <RouterProvider router={router} />
+    </div>
   );
 };
 

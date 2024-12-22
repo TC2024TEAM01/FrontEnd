@@ -1,0 +1,46 @@
+.checkin-page {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 1.2em; /* Increase font size */
+}
+
+.filter input {
+  margin-left: 10px;
+  padding: 10px; /* Increase padding */
+  font-size: 1em; /* Increase font size */
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  border-right: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+.table th:last-child, .table td:last-child {
+  border-right: none;
+}

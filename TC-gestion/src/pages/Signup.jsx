@@ -1,6 +1,6 @@
 import FormInput from '../components/FormInput';
 import { useState } from 'react';
-
+import NavBar from '../components/NavBarpro';
 const Signup = () => {
     const [values, setValues] = useState({
         firstname: "",
@@ -91,6 +91,8 @@ const Signup = () => {
       };
 
   return (
+    <div>
+      <NavBar/>
     <form onSubmit={handleSubmit}>
         <h1>Register</h1>
         {inputs.map((input) => (
@@ -103,6 +105,7 @@ const Signup = () => {
         ))}
         <button>Submit</button>
       </form>
+      </div>
   )
 }
 

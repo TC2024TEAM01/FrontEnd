@@ -1,8 +1,8 @@
 import FormInput from '../components/FormInput';
 import { useState } from 'react';
 import '../components/formInput.css';
-import NavBar from '../components/NavBarpro';
-const Profile = () => {
+import NavBarEm from '../components/NavBarEm';
+const ProfileEm = () => {
     const [isEditing, setIsEditing] = useState(false);
     const [values, setValues] = useState({
         firstname: "",
@@ -10,7 +10,7 @@ const Profile = () => {
         email: "",
         contactnumber: "",
         password: "",
-        role: "RH", // Add role to the state
+        role: "employee", // Add role to the state
     });
 
     const [originalValues, setOriginalValues] = useState({ ...values });
@@ -128,7 +128,7 @@ const Profile = () => {
         <div style={{
             backgroundColor:'white'
         }}>
-            <NavBar/>
+            <NavBarEm/>
             <div className="formContainer">
             <form onSubmit={handleSubmit}>
                 <h1 style={{
@@ -207,4 +207,4 @@ const Profile = () => {
     );
 };
 
-export default Profile;
+export default ProfileEm;

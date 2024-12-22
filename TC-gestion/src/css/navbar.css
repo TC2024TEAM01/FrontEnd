@@ -1,0 +1,117 @@
+.navbar {
+    background-color: #1565C0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+  }
+  .navbar-dropdown {
+    position: relative;
+  }
+  
+  .navbar-logo {
+    size: 80%;
+  }
+  .profile{
+    border-radius: 23px;
+    font-size: 23px;
+    font-weight: 500;
+    padding: 10px 24px;
+    background-color:whitesmoke;
+    color: #1565C0;
+  }
+  .navbar-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    gap: 90px;
+    margin-left: 100px;
+  }
+  
+  .navbar-link {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-link:hover {
+    color: whitesmoke;
+  }
+  
+  .navbar-button {
+    background-color: transparent;
+    font-weight: 600;
+    color: white;
+    border: none;
+    outline: none;
+    }
+    .navbar-button:focus {
+        outline: none; /* Remove the outline on focus */
+      }
+  
+  .navbar-button:hover {
+    outline: none;
+  }
+  
+  .navbar-dropdown {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    position: fixed;
+    top: 100px;
+  }
+  
+  .dropdown-item {
+    padding: 10px 40px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    background-color: #1565C0;
+    border: none;
+    font-size: 16px;
+    transition: background-color 0.5s ease;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #fff;
+    color: #1565C0
+  }
+  
+  .hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .hamburger-bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .navbar-links {
+      display: none;
+    }
+  
+    .hamburger-icon {
+      display: flex;
+    }
+  }

@@ -1,7 +1,7 @@
 
 import FormInput from '../components/FormInput';
 import { useState } from 'react';
-
+import NavBar from '../components/NavBarpro';
 const AddNew = () => {    
     const [values, setValues] = useState({
         firstname: "",
@@ -73,6 +73,9 @@ const AddNew = () => {
     };
 
     return (
+        <div style={{
+            backgroundColor: 'white',
+        }}><NavBar/>
         <div className="formContainer">
             <form onSubmit={handleSubmit}>
                 <h1 style={{
@@ -114,6 +117,7 @@ const AddNew = () => {
                 </div>
                 
             </form>
+        </div>
         </div>
     );
 };

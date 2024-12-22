@@ -6,14 +6,13 @@
 body, html {
     height: 100vh;
     margin: 0;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .formContainer {
-    width: 500rem;
-    height: 400rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,6 +90,7 @@ select:invalid[focused="true"] ~ span {
 }
 .submit,.edit {
     background-color:#1565C0;
+    color: aliceblue;
     font-size: medium;
 }
 .edit {
